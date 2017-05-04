@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+<section id="screen1">
+<div class="w3-content w3-section" style="max-height: 300px">
+  <img class="mySlides" src="dish1.jpg" style="width:100%">
+  <img class="mySlides" src="dish2.jpg" style="width:100%">
+    <img class="mySlides" src="dish3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+}
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+	<nav>
+		<ul>
+			<li><a href="#"><b>Home</b></a></li>
+			<li><a href="#"><b>About</b></a></li>
+			<li><a href="#"><b>Recipes</b></a></li>
+			<li><a href="#"><b>Contact</b></a></li>
+			<li><a href="#"><b>Good Reads</b></a></li>
+		</ul>
+	</nav>
+
+</section>
+
+<section id="screen2">
+<br>
+<br>
+	<section id="events">
+        
+          <div class="container">
+                
+              <div class="row">
+                
+                  <div class="col-md-12 text-center">
+                    
+                      <h2>RECIPES</h2>
+                      <div class="separator short"><div class="separator_line"></div></div>
+
+                  </div>
+              </div>
+                
+              <div class="row">
+                
+                  <div class="col-md-4">
+                    
+                      <div class="eventBox">
+                        
+                          <img src="indian.jpg" alt="#" class="img-responsive">
+
+                          
+
+                          <div class="clearfix"></div>
+                          <br>
+                          <h4>INDIAN</h2>
+                          <br>
+
+                       <p>Indian cuisine encompasses a wide variety of regional cuisines native to India. Given the range of diversity in soil type, climate and occupations, these cuisines vary significantly from each other and use locally available spices, herbs, vegetables and fruits.</p>
+                          <a href="#">Continue Reading</a>
+
+                      </div>
+
+                  </div>
+                  <div class="col-md-4">
+                    
+                      <div class="eventBox">
+                        
+                          <img src="continental.jpg" alt="# " class="img-responsive">
+
+                          
+
+                          <div class="clearfix"></div>
+                          <br>
+                          <h4>CONTINENETAL</h2>
+                          <br>
+
+                       <p>Diverse by themselves, although there are common characteristics that distinguish Western cooking from cuisines of Asian countries[4] and others. Compared with traditional cooking of Asian countries.</p>
+                          <a href="#">Continue Reading</a>
+
+                    </div>
+
+                  </div>
+                
+                  <div class="col-md-4">
+                    
+                      <div class="eventBox">
+                        
+                          <img src="Italian.jpg" alt="#" class="img-responsive">
+
+                          
+
+                          <div class="clearfix"></div>
+                          <br>
+                          <h4>ITALIAN</h2>
+                          <br>
+
+                       <p>Italian cuisine has developed through centuries of social and political changes, with roots as far back as the 4th century BC. Italian cuisine has its origins in Etruscan, ancient Greek, and ancient Roman cuisines. Significant changes occurred with the discovery of the New World and the introduction of potatoes, tomatoes, bell peppers and maize.</p>
+                          <a href="#">Continue Reading</a>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div> 
+
+      </section>
+
+	
+</section>
+<div id="footer">
+	<div class="col-md-3">
+	  <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                      <div class="subsForm">
+		      		<form action="A mail manger URL" method="post" target="popupwindow" onsubmit="window.open('URL', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p><input type="text" name="email" placeholder="Enter Email Id"/></p><input type="hidden" value="#" name="uri"/><input type="hidden" name="loc" value="en"/><input type="submit" value="" /></form>
+	</div>
+</div>
+
+
+
+</body>
+</html>
